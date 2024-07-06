@@ -1,4 +1,2 @@
-FROM eclipse-temurin:17
+FROM tomcat:9.0
 COPY target/*.jar app.jar
-ENTRYPOINT [ "java","-jar","/app.jar" ]
-EXPOSE 8080
