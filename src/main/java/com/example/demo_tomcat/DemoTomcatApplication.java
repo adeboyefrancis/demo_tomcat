@@ -4,8 +4,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+//import org.springframework.web.bind.annotation.GetMapping;
+//import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
@@ -21,10 +21,10 @@ public class DemoTomcatApplication extends SpringBootServletInitializer {
 		SpringApplication.run(DemoTomcatApplication.class, args);
 	}
 
-	@GetMapping("/")
-public String hello(@RequestParam(value = "name", defaultValue = "Deployment of maven project via Jenkins pipeline to Tomcat") String name) {
-    return String.format("%s", name);
-}
+//	@GetMapping("/")
+//    public String hello(@RequestParam(value = "name", defaultValue = "Deployment of maven project via Jenkins pipeline to Tomcat") String name) {
+//  return String.format("%s", name);
+//   }
 
 
 }
