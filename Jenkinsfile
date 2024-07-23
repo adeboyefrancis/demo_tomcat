@@ -2,6 +2,8 @@ pipeline {
     agent any
 
     environment {
+        MAVEN_HOME = "/opt/maven"
+        PATH = "${MAVEN_HOME}/bin:${env.PATH}"
         DOCKER_IMAGE = 'demo_tomcat'
         DOCKER_TAG = "${env.BUILD_NUMBER}"
         TARGET_SERVER = 'ubuntu@34.244.150.121'
